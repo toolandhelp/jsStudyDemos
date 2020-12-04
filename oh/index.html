@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OHHHHHHHHHHHHHHH……</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/oh.css" />
+
+</head>
+
+<body>
+    <div class="center-middle">
+        <div class="start-Tilt-left">
+            <div class="start-oh">OH</div>
+        </div>
+    </div>
+
+    <div class="box1" id="box1"></div>
+    <div class="box2 rotate45" id="box2"></div>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
+
+<script>
+    var bodyHeight = document.body.clientHeight;
+    var bodyWidth = document.body.clientWidth;
+    var fontSize = 24;
+    $(function () {
+
+        console.log(bodyHeight);
+        console.log(bodyWidth)
+        //rightBottonToLeftTop();
+        startRightToLeft();
+        setTimeout(() => {
+            leftToRight();
+            setTimeout(function () {
+                rightToLeft()
+            }, 1300);
+        }, 1400);
+
+
+        function rightToLeft() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-oh')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("left", bodyWidth + rwidth)//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ left: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box1");
+            }
+        };
+
+        function startRightToLeft() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-oh')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("left", bodyWidth + rwidth)//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ left: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box2");
+            }
+        };
+
+
+        function leftToRight() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-left-right')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("right", bodyWidth + rwidth)//设置left值
+                    // .css("right", parseInt(Math.random() * (bodyWidth * 0.9)))//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ right: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box1");
+            }
+        };
+
+    });
+
+</script>

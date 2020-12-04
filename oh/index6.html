@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid red;
+        }
+
+        .box2 {
+            position: absolute;
+            top:0;
+            z-index: 100000;
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid blue;
+        }
+
+        .rotate45 {
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+    </div>
+    <div class="box2 rotate45">
+
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
+<script>
+    $(function () {
+
+    });
+</script>

@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OHHHHHHHHHHHHHHHHHHHH</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            font-family: "微软雅黑";
+            font-size: 62.5%;
+        }
+
+        /* 中部居中 */
+        .center-middle {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+
+        /* 向左倾斜 */
+        .start-Tilt-left {
+            /* Rotate div */
+            transform: rotate(-9deg);
+            /* Internet Explorer */
+            -ms-transform: rotate(-9deg);
+            /* Firefox */
+            -moz-transform: rotate(-9deg);
+            /* Safari 和 Chrome */
+            -webkit-transform: rotate(-9deg);
+            /* Opera */
+            -o-transform: rotate(-9deg);
+        }
+
+        .start-oh {
+            /* font-size: calc(100vw/12); */
+            font-size: calc(100vh/12);
+            font-weight: bold;
+            font-family: fantasy;
+            color: white;
+            animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+        }
+
+
+        @keyframes start-oh-text-shadow-glitch {
+            0% {
+                text-shadow: none
+            }
+
+            25% {
+                text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #040404;
+            }
+
+            50% {
+                text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+            }
+
+            75% {
+                text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+            }
+
+            100% {
+                text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+            }
+        }
+
+        .box {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box1 {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .box2 {
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            z-index: 10;
+            width: calc(100vw*1.2);
+            height: 100vh;
+            /* border: 1px solid blue;   */
+            margin-left: -144px;
+
+        }
+
+        .rotate45 {
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+
+        span {
+            /* width: 300px; */
+            height: 40px;
+            position: absolute;
+            overflow: hidden;
+            /* color: #000;
+            font-size: 4em;
+            line-height: 1.5em;
+            cursor: pointer;
+            white-space: nowrap; */
+        }
+
+        .base-oh {
+            /* font-size:24em; */
+            font-weight: bold;
+            font-family: fantasy;
+            color: white;
+            animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+        }
+
+        .base-left-right {
+            /* font-size:24em; */
+            font-weight: bold;
+            font-family: fantasy;
+            color: white;
+            animation: base-left-right-text-shadow-glitch .5s cubic-bezier(1, -1.91, 0, 2.79) 0.5s infinite normal both running;
+        }
+
+        .start-oh {
+            /* font-size: calc(100vw/12); */
+            font-size: calc(100vh/12);
+            font-weight: bold;
+            font-family: fantasy;
+            color: white;
+            animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+        }
+
+        @keyframes start-oh-text-shadow-glitch {
+            0% {
+                text-shadow: none
+            }
+
+            25% {
+                text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #040404;
+            }
+
+            50% {
+                text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+            }
+
+            75% {
+                text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+            }
+
+            100% {
+                text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+            }
+        }
+
+        @keyframes base-left-right-text-shadow-glitch {
+            0% {
+                text-shadow: none
+            }
+
+            25% {
+                text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #FFC107;
+            }
+
+            50% {
+                text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+            }
+
+            75% {
+                text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+            }
+
+            100% {
+                text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+            }
+        }
+
+        .angle45 {
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+
+        .tempBox {
+            border: 1px solid slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="center-middle">
+            <div class="start-Tilt-left">
+                <div class="start-oh">OH</div>
+            </div>
+        </div>
+
+        <div class="box1" id="box1"></div>
+        <div class="box2 rotate45" id="box2"></div>
+    </div>
+</body>
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="jquery-1.12.4.js"></script> -->
+<script>
+
+
+    var bodyHeight = document.body.clientHeight;
+    var bodyWidth = document.body.clientWidth;
+    var fontSize = 24;
+    $(function () {
+
+        startRightToLeft();
+        setTimeout(() => {
+            leftToRight();
+            setTimeout(function () {
+                rightToLeft()
+            }, 1300);
+        }, 1400);
+
+
+        function rightToLeft() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-oh')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("left", bodyWidth + rwidth)//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ left: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box1");
+            }
+        };
+
+        function startRightToLeft() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-oh')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("left", bodyWidth + rwidth)//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ left: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box2");
+            }
+        };
+
+
+        function leftToRight() {
+            for (i = 0; i < (bodyHeight / fontSize) + 1; i++) {
+
+                let rwidth = parseInt(Math.random() * (bodyWidth * 0.1));
+
+                $("<span></span>")
+                    .text('HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'
+                        + 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHO')//设置内容
+                    .addClass('base-left-right')
+                    .css('font-size', fontSize)
+                    .css('width', bodyWidth * 0.8) //80%
+                    .css("right", bodyWidth + rwidth)//设置left值
+                    // .css("right", parseInt(Math.random() * (bodyWidth * 0.9)))//设置left值
+                    .css("top", i * fontSize)//设置top值
+                    .animate({ right: -bodyWidth }, 3000, "linear", function () {
+                        //debugger
+                        $(this).remove();
+                    })
+                    .appendTo("#box1");
+            }
+        };
+    });
+
+</script>
+
+</html>

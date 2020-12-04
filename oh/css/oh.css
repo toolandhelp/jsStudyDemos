@@ -1,0 +1,145 @@
+/* 中部居中 */
+.center-middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+/* 向左倾斜 */
+.start-Tilt-left{
+    /* Rotate div */
+    transform: rotate(-9deg);
+    /* Internet Explorer */
+    -ms-transform: rotate(-9deg);
+    /* Firefox */
+    -moz-transform: rotate(-9deg);
+    /* Safari 和 Chrome */
+    -webkit-transform: rotate(-9deg);
+    /* Opera */
+    -o-transform: rotate(-9deg);   
+}
+.start-oh {
+    /* font-size: calc(100vw/12); */
+    font-size: calc(100vh/12);
+    font-weight: bold;
+    font-family: fantasy;
+    color: white;
+    animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+}
+
+
+@keyframes start-oh-text-shadow-glitch {
+    0% {
+        text-shadow: none
+    }
+    25% {
+        text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #040404;
+    }
+    50% {
+        text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+    }
+    75% {
+        text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+    }
+    100% {
+        text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+    }
+}
+
+.box1 {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.box2 {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100wh;
+    /* border: 1px solid blue; */
+}
+
+span {
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.rotate45 {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+ 
+
+.base-oh {
+    /* font-size:24em; */
+    font-weight: bold;
+    font-family: fantasy;
+    color: white;
+    animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+}
+
+@keyframes start-oh-text-shadow-glitch {
+    0% {
+        text-shadow: none
+    }
+
+    25% {
+        text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #040404;
+    }
+
+    50% {
+        text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+    }
+
+    75% {
+        text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+    }
+
+    100% {
+        text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+    }
+}
+
+.base-left-right {
+    /* font-size:24em; */
+    font-weight: bold;
+    font-family: fantasy;
+    color: white;
+    animation: base-left-right-text-shadow-glitch .5s cubic-bezier(1, -1.91, 0, 2.79) 0.5s infinite normal both running;
+}
+@keyframes base-left-right-text-shadow-glitch {
+    0% {
+        text-shadow: none
+    }
+
+    25% {
+        text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #FFC107;
+    }
+
+    50% {
+        text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+    }
+
+    75% {
+        text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+    }
+
+    100% {
+        text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+    }
+}

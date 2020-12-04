@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        /* background: red; */
+        /* height: 50px; */
+        /* width: 50px; */
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+        /* transition: all 0.6s; */
+
+      
+    }
+/* 
+    html:hover div {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+    } */
+
+
+    .start-oh {
+        /* font-size: calc(100vw/12); */
+        font-size: calc(100vh/12);
+        font-weight: bold;
+        font-family: fantasy;
+        color: white;
+        animation: start-oh-text-shadow-glitch .65s cubic-bezier(1, -1.91, 0, 2.79) 0s infinite normal both running;
+
+          /* width: 140px; */
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+
+
+    @keyframes start-oh-text-shadow-glitch {
+        0% {
+            text-shadow: none
+        }
+
+        25% {
+            text-shadow: -2px -2px 0 #8adcf3, 2px 2px 0 #040404;
+        }
+
+        50% {
+            text-shadow: 2px -2px 0 #c1e265, -2px 2px 0 #952ca5;
+        }
+
+        75% {
+            text-shadow: -2px 2px 0 #6ec3e4, 2px -2px 0 #060606;
+        }
+
+        100% {
+            text-shadow: 2px 2px 0 #9C27B0, -2px -2px 0 #FFC107;
+        }
+    }
+    .target {
+  font-size: 14px;
+  transition-property: font-size;
+  transition-duration: 4s;
+}
+
+.target:hover {
+  font-size: 36px;
+}
+</style>
+
+<body>
+
+        <a class="target">Hover over me</a>
+
+    <div class="div1">
+        <div class="start-oh" style="font-size:smaller">
+            000000
+        </div>
+
+        <div class="start-oh" style="font-size: small;">
+            000000
+        </div>
+        <div class="start-oh" style="font-size: x-small;">
+            000000hhhhh
+        </div>
+        <div class="start-oh" style="font-size: xx-small;">
+            000000hh
+        </div>
+        <div class="start-oh" style="font-size: larger;">
+            000000hhh
+        </div>
+        <div class="start-oh" style="font-size:x-large;">
+            00000hhh0
+        </div>
+        <div class="start-oh" style="font-size:xx-large;">
+            000000hhh
+        </div>
+    </div>
+</body>
+
+</html>
